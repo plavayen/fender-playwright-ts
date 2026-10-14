@@ -15,5 +15,12 @@
   },
   "dependencies": {
     "playwright": "^1.64.0"
-  }
+  },
+  "scripts": {
+  "test": "playwright test tests/test.spec.ts",
+  "test:ui": "playwright test --ui",
+  "test:chrome": "playwright test --project=chromium",
+  "test:headed": "playwright test --headed",
+  "report": "playwright show-report"
+}
 }

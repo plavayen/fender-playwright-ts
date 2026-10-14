@@ -10,6 +10,7 @@ test('A User can succesfuly login', async ({ page }) => {
     process.env.FENDER_USER || '', 
     process.env.FENDER_PASS || ''
   );
+  await homePage.accountHomeModal.waitFor({ state: 'visible' });
   await homePage.accountHomeModal.hover();
   await page.getByText('Hi Pablo Lavayen').click();
 });
