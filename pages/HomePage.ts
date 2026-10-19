@@ -11,10 +11,9 @@ export class HomePage extends BasePage {
     this.signInLink = page.getByRole('link', { name: 'Sign in' });
   }
 
-  async navigateToLogin(url:string) {
+  async navigateToLogin(url: string) {
     await this.page.goto(url);
     await this.accountButton.hover();
     await this.signInLink.click();
   }  
-
 }

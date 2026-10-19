@@ -12,7 +12,6 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
 
-    # Inyectamos de forma segura las credenciales desde los GitHub Secrets
     env:
       FENDER_USER: ${{ secrets.FENDER_USER }}
       FENDER_PASS: ${{ secrets.FENDER_PASS }}
