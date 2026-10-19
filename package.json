@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,13 +13,13 @@
     "dotenv": "^18.0.7"
   },
   "dependencies": {
-    "playwright": "^1.64.0"
+    "playwright": "^1.64.1"
   },
   "scripts": {
-  "test": "playwright test tests/test.spec.ts",
-  "test:ui": "playwright test --ui",
-  "test:chrome": "playwright test --project=chromium",
-  "test:headed": "playwright test --headed",
-  "report": "playwright show-report"
-}
+    "test": "playwright test tests/login.spec.ts",
+    "test:ui": "playwright test --ui",
+    "test:chrome": "playwright test --project=chromium",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  }
 }
